@@ -16,9 +16,9 @@ const List = ({data}: Props) => {
                 </a>
                 <div className="p-5">
                     <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{title}</h5>
+                        <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">{title}</h5>
                     </a>                    
-                    <p className="truncate">{short_description}</p>
+                    <p className="multi-line">{short_description}</p>
                 </div>
                 <hr />
                 <div className="grid grid-cols-2 gap-4 p-2">

@@ -37,16 +37,18 @@ function App() {
     <>
     <Layout>
       <div className="flex flex-col bg-blue-400 py-[58px] pb-52">
-        <div className="grid grid-cols-1 md:grid-cols-2 text-white mx-auto max-w-screen-lg">
+        <div className="mx-auto max-w-screen-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 text-white">
             <h1 className="text-2xl font-bold w-44">Pilih Game Favorite Kalian</h1>
             <p className="w-full">Shortbread cookie tootsie roll sugar plum cheesecake pudding croissant apple pie. Lollipop macaroon lollipop croissant chocolate cake croissant fruitcake brownie jelly-o.</p>
         </div>
-        <hr className="mt-10 text-white w-full" />
+        <hr className="mt-10 text-white" />
+        </div>
       </div>
       <div className="mx-auto max-w-screen-lg -mt-44">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-xl font-bold text-white">Daftar Game</h2>
-          <Select options={filterListOptions} onChange={handleChangeFilter} className="min-w-[200px]" defaultValue={filterListOptions.filter(list => list.value === params)} />
+          <Select options={filterListOptions} onChange={handleChangeFilter} className="min-w-[200px]" placeholder="Filter game..." defaultValue={filterListOptions.filter(list => list.value === params)} />
         </div>
         <List data={data} />
       </div>
